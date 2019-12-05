@@ -33,7 +33,7 @@ fun longestCommonPrefix(strs: Array<String>): String {
 
 fun longestCommonPrefix2(strs: Array<String>): String? {
     if (strs.isEmpty()) return ""
-    
+
     for (i in strs[0].indices) {
         val c = strs[0][i]
         for (j in 1 until strs.size) {
