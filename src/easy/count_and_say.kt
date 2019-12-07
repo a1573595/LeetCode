@@ -49,7 +49,7 @@ fun countAndSay2(n: Int): String {
         for(j in temString.indices) {
             if(j < temString.length - 1 && temString[j] == temString[j + 1]) {
                 count++
-            }else {
+            } else {
                 sayString = sayString + count + temString[j]
                 count = 1
             }

@@ -24,7 +24,7 @@ fun strStr2(haystack: String, needle: String): Int {
     for(i in haystack.indices) {
         if(i + needle.length > haystack.length) {
             break
-        }else if(haystack[i] == needle[0] && haystack.substring(i, i + needle.length) == needle) {
+        } else if(haystack[i] == needle[0] && haystack.substring(i, i + needle.length) == needle) {
             return i
         }
     }

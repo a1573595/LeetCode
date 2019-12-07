@@ -10,10 +10,6 @@ fun main(args: Array<String>) {
     l.sort()
 }
 
-class ListNode(var value: Int) {
-    var next: ListNode? = null
-}
-
 fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {
     if(l1 == null && l2 == null) return null
 
