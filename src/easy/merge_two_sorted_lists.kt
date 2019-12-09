@@ -3,11 +3,7 @@ package easy
 // https://leetcode.com/problems/merge-two-sorted-lists/
 
 fun main(args: Array<String>) {
-    val list = IntArray(3)
-    list.sort()
-
-    val l: ArrayList<Int> = ArrayList()
-    l.sort()
+    showNode(mergeTwoLists(produceNode(intArrayOf(1, 2, 4)), produceNode(intArrayOf(1, 3, 4)))) // 1->1->2->3->4->4
 }
 
 fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {
