@@ -2,7 +2,7 @@ package easy
 
 // https://leetcode.com/problems/count-and-say/
 
-fun main(args: Array<String>) {
+fun main() {
     println(countAndSay(8))
     println(countAndSay(10))
 
@@ -14,14 +14,14 @@ fun countAndSay(n: Int): String {
     var sayString = "1"
     var count = 1
 
-    for(i in 2..n) {
+    for (i in 2..n) {
         val temString = sayString
         sayString = ""
 
-        for(j in temString.indices) {
-            if(j < temString.length - 1 && temString[j] == temString[j + 1]) {
+        for (j in temString.indices) {
+            if (j < temString.length - 1 && temString[j] == temString[j + 1]) {
                 count++
-            }else {
+            } else {
                 sayString = sayString + count + temString[j]
                 count = 1
             }
@@ -42,12 +42,12 @@ fun countAndSay2(n: Int): String {
     }
     var count = 1
 
-    for(i in 6..n) {
+    for (i in 6..n) {
         val temString = sayString
         sayString = ""
 
-        for(j in temString.indices) {
-            if(j < temString.length - 1 && temString[j] == temString[j + 1]) {
+        for (j in temString.indices) {
+            if (j < temString.length - 1 && temString[j] == temString[j + 1]) {
                 count++
             } else {
                 sayString = sayString + count + temString[j]

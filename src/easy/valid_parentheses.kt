@@ -5,7 +5,7 @@ import kotlin.collections.ArrayList
 
 // https://leetcode.com/problems/valid-parentheses/
 
-fun main(args: Array<String>) {
+fun main() {
     println(isValid("()"))
     println(isValid("()[]{}"))
     println(isValid("(]"))
@@ -25,13 +25,14 @@ fun main(args: Array<String>) {
 fun isValid(str: String): Boolean {
     val charList = ArrayList<Char>()
 
-    for(c in str){
-        if(charList.size >= 0 && (c == '(' || c == '{' || c == '[')) {
+    for (c in str) {
+        if (charList.size >= 0 && (c == '(' || c == '{' || c == '[')) {
             charList.add(c)
-        } else if(charList.size > 0 && (c == ')' && charList[charList.size-1] == '(' ||
-                    c == '}' && charList[charList.size-1] == '{' ||
-                    c == ']' && charList[charList.size-1] == '[')){
-            charList.removeAt(charList.size-1)
+        } else if (charList.size > 0 && (c == ')' && charList[charList.size - 1] == '(' ||
+                    c == '}' && charList[charList.size - 1] == '{' ||
+                    c == ']' && charList[charList.size - 1] == '[')
+        ) {
+            charList.removeAt(charList.size - 1)
         } else
             return false
     }
@@ -42,8 +43,8 @@ fun isValid(str: String): Boolean {
 fun isValid2(str: String): Boolean {
     var str2 = str
 
-    while(str2.contains("()") || str2.contains("[]") || str2.contains("{}")) {
-        str2 = str2.replace("()","").replace("[]","").replace("{}","")
+    while (str2.contains("()") || str2.contains("[]") || str2.contains("{}")) {
+        str2 = str2.replace("()", "").replace("[]", "").replace("{}", "")
     }
 
     return str2.isEmpty()

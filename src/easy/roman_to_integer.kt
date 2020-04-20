@@ -15,7 +15,7 @@ package easy
     X can be placed before L (50) and C (100) to make 40 and 90.    XL  XC
     C can be placed before D (500) and M (1000) to make 400 and 900.    CD  CM
  */
-fun main(args: Array<String>) {
+fun main() {
     println(romanToInt("III"))  // 3
     println(romanToInt("IV"))   // 4
     println(romanToInt("IX"))   // 9
@@ -36,8 +36,8 @@ fun romanToInt(str: String): Int {
     var index = str.length - 1
 
     while (index >= 0) {
-        outer@ while(index >= 1) {
-            when(str[index-1].toString() + str[index].toString()) {
+        outer@ while (index >= 1) {
+            when (str[index - 1].toString() + str[index].toString()) {
                 "IV" -> {
                     answer += 4
                     index -= 2
@@ -66,8 +66,8 @@ fun romanToInt(str: String): Int {
             }
         }
 
-        if(index >= 0) {
-            when(str[index]) {
+        if (index >= 0) {
+            when (str[index]) {
                 'I' -> {
                     answer += 1
                     index--

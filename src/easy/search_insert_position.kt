@@ -4,7 +4,7 @@ import kotlin.system.measureTimeMillis
 
 // https://leetcode.com/problems/search-insert-position/
 
-fun main(args: Array<String>) {
+fun main() {
     val costTimeMillis1 = measureTimeMillis {
         println(searchInsert(intArrayOf(1, 3, 5, 6), 5))    // 2
         println(searchInsert(intArrayOf(1, 3, 5, 6), 2))    // 1
@@ -26,8 +26,8 @@ fun main(args: Array<String>) {
 fun searchInsert(nums: IntArray, target: Int): Int {
     var position = 0
 
-    for(n in nums) {
-        if(n < target) {
+    for (n in nums) {
+        if (n < target) {
             position++
         }
     }
@@ -38,8 +38,8 @@ fun searchInsert(nums: IntArray, target: Int): Int {
 fun searchInsert2(nums: IntArray, target: Int): Int {
     var position = 0
 
-    for(n in nums) {
-        if(n < target) {
+    for (n in nums) {
+        if (n < target) {
             position++
         } else {
             break

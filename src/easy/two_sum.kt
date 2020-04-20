@@ -4,8 +4,8 @@ import java.util.*
 
 // https://leetcode.com/problems/two-sum/
 
-fun main(args: Array<String>) {
-    println(twoSum(intArrayOf(1, 2, 3),5).joinToString())
+fun main() {
+    println(twoSum(intArrayOf(1, 2, 3), 5).joinToString())
 
 }
 
@@ -13,9 +13,9 @@ fun twoSum(nums: IntArray, target: Int): IntArray {
     var index1: Int
     var index2: Int
 
-    for(i in nums.indices) {
+    for (i in nums.indices) {
         index2 = nums.indexOf(target - nums[i])
-        if(index2 != -1 && index2 != i) {
+        if (index2 != -1 && index2 != i) {
             index1 = i
             return intArrayOf(index1, index2)
         }

@@ -2,7 +2,7 @@ package easy
 
 // https://leetcode.com/problems/length-of-last-word/
 
-fun main(args: Array<String>) {
+fun main() {
     println(lengthOfLastWord("Hello World"))    // 5
     println(lengthOfLastWord("Today is a nice day"))  // 3
     println(lengthOfLastWord("a "))  // 1
@@ -15,12 +15,12 @@ fun main(args: Array<String>) {
 }
 
 fun lengthOfLastWord(str: String): Int {
-    if(str.isEmpty()) return 0
+    if (str.isEmpty()) return 0
 
     val array = str.split(" ")
 
-    for(i in array.size-1 downTo 0) {
-        if(array[i].isNotEmpty() && array[i].isNotBlank()) {
+    for (i in array.size - 1 downTo 0) {
+        if (array[i].isNotEmpty() && array[i].isNotBlank()) {
             return array[i].length
         }
     }
@@ -29,15 +29,15 @@ fun lengthOfLastWord(str: String): Int {
 }
 
 fun lengthOfLastWord2(str: String): Int {
-    if(str.isEmpty()) return 0
+    if (str.isEmpty()) return 0
     var count = 0
 
-    for(i in str.length-1 downTo 0) {
-        if(count == 0 && str[i]==' ') {
+    for (i in str.length - 1 downTo 0) {
+        if (count == 0 && str[i] == ' ') {
             continue
-        } else if(count > 0 && str[i]==' '){
+        } else if (count > 0 && str[i] == ' ') {
             break
-        } else if(str[i]!=' ') {
+        } else if (str[i] != ' ') {
             count++
         }
     }

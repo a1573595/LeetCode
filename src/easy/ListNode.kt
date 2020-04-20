@@ -4,8 +4,8 @@ class ListNode(var value: Int) {
     var next: ListNode? = null
 }
 
-fun produceNode(intArray: IntArray):  ListNode?{
-    val head: ListNode? = if(intArray.isEmpty()) null else ListNode(intArray[0])
+fun produceNode(intArray: IntArray): ListNode? {
+    val head: ListNode? = if (intArray.isEmpty()) null else ListNode(intArray[0])
     var node: ListNode? = head
     var index = 1
 
@@ -21,11 +21,11 @@ fun produceNode(intArray: IntArray):  ListNode?{
 fun showNode(listNode: ListNode?) {
     var node = listNode
 
-    while(node != null) {
+    while (node != null) {
         print(node.value)
         node = node.next
 
-        if(node != null)
+        if (node != null)
             print(" -> ")
     }
 

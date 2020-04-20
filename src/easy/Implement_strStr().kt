@@ -2,7 +2,7 @@ package easy
 
 // https://leetcode.com/problems/implement-strstr/
 
-fun main(args: Array<String>) {
+fun main() {
     println(strStr("hello", "ll"))
     println(strStr("aaaaa", "bba"))
     println(strStr("", ""))
@@ -19,12 +19,12 @@ fun strStr(haystack: String, needle: String): Int {
 }
 
 fun strStr2(haystack: String, needle: String): Int {
-    if(needle.isEmpty()) return 0
+    if (needle.isEmpty()) return 0
 
-    for(i in haystack.indices) {
-        if(i + needle.length > haystack.length) {
+    for (i in haystack.indices) {
+        if (i + needle.length > haystack.length) {
             break
-        } else if(haystack[i] == needle[0] && haystack.substring(i, i + needle.length) == needle) {
+        } else if (haystack[i] == needle[0] && haystack.substring(i, i + needle.length) == needle) {
             return i
         }
     }
