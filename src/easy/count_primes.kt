@@ -20,7 +20,6 @@ fun main() {
     println(countPrimes2(2))
     println(countPrimes2(10))
     println(countPrimes(100))
-    println(countPrimes3(499979))
 }
 
 fun countPrimes(n: Int): Int {
@@ -46,7 +45,7 @@ fun countPrimes(n: Int): Int {
 
     return primes.size + 1
 }
-// java.lang.ArrayIndexOutOfBoundsException: -2146737495
+
 fun countPrimes2(n: Int): Int {
     if (n < 3) return 0
 
@@ -58,7 +57,7 @@ fun countPrimes2(n: Int): Int {
             continue
         }
 
-        var j: Long = (i * i).toLong()
+        var j: Long = i.toLong() * i.toLong()
         while (j < n) {
             if (!nonPrimes[j.toInt()]) {
                 nonPrimes[j.toInt()] = true
@@ -68,28 +67,5 @@ fun countPrimes2(n: Int): Int {
         }
     }
 
-    return count
-}
-
-
-fun countPrimes3(n: Int): Int {
-    var count = 0
-    val primes = BooleanArray(n) { _ -> true }
-    for (i in 2 until n) {
-        if (primes[i]) {
-            var j = i * i
-            if (i.toLong() * i.toLong() < n) {
-                while (j < n) {
-                    primes[j] = false
-                    j += i
-                }
-            }
-        }
-    }
-    for (i in 2 until n) {
-        if (primes[i]) {
-            count++
-        }
-    }
     return count
 }
