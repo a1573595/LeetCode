@@ -1,6 +1,9 @@
 package easy
 
-// https://leetcode.com/problems/palindrome-number/
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+ */
 
 fun main() {
     println(isPalindrome2(121))

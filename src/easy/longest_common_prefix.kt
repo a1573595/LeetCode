@@ -23,9 +23,11 @@ fun longestCommonPrefix(strs: Array<String>): String {
     for (i in strs[0].indices) {
         val str = strs[0][i]
 
-        for (j in 1 until strs.size)
-            if (strs[j].length == i || strs[j][i] != str)
+        for (j in 1 until strs.size) {
+            if (strs[j].length == i || strs[j][i] != str) {
                 return strs[0].substring(0, i)
+            }
+        }
     }
 
     return strs[0]
