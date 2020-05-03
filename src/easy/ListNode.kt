@@ -1,8 +1,6 @@
 package easy
 
-class ListNode(var value: Int) {
-    var next: ListNode? = null
-}
+data class ListNode(var value: Int, var next: ListNode? = null)
 
 fun produceNode(intArray: IntArray): ListNode? {
     val head: ListNode? = if (intArray.isEmpty()) null else ListNode(intArray[0])

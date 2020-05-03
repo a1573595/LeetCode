@@ -4,6 +4,7 @@ package easy
 
 fun main() {
     showNode(deleteDuplicates(produceNode(intArrayOf(1, 1, 2))))    // 1->2
+    showNode(deleteDuplicates(produceNode(intArrayOf(1, 1, 1, 2))))    // 1->2
     showNode(deleteDuplicates(produceNode(intArrayOf(1, 1, 2, 3, 3))))    // 1->2->3
 }
 

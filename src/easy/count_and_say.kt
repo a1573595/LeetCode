@@ -19,7 +19,7 @@ fun countAndSay(n: Int): String {
         sayString = ""
 
         for (j in temString.indices) {
-            if (j < temString.length - 1 && temString[j] == temString[j + 1]) {
+            if (j < temString.lastIndex && temString[j] == temString[j + 1]) {
                 count++
             } else {
                 sayString = sayString + count + temString[j]
@@ -47,7 +47,7 @@ fun countAndSay2(n: Int): String {
         sayString = ""
 
         for (j in temString.indices) {
-            if (j < temString.length - 1 && temString[j] == temString[j + 1]) {
+            if (j < temString.lastIndex && temString[j] == temString[j + 1]) {
                 count++
             } else {
                 sayString = sayString + count + temString[j]

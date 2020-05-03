@@ -6,7 +6,13 @@ package easy
  */
 
 fun main() {
+    println(isPalindrome(121))
+    println(isPalindrome(1234321))
+    println(isPalindrome(123321))
+    println()
+    println()
     println(isPalindrome2(121))
+    println(isPalindrome(1234321))
     println(isPalindrome2(123321))
 }
 
