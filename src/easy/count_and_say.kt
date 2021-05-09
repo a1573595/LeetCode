@@ -1,15 +1,36 @@
 package easy
 
-// https://leetcode.com/problems/count-and-say/
+import kotlin.system.measureTimeMillis
+
+/**
+ * count-and-say
+ * https://leetcode.com/problems/count-and-say/
+ */
 
 fun main() {
-    println(countAndSay(8))
-    println(countAndSay(10))
+    val costTimeMillis = measureTimeMillis {
+        println(countAndSay(8))
+        println(countAndSay(10))
+        println(countAndSay(15))
+    }
 
-    println(countAndSay2(8))
-    println(countAndSay2(10))
+    val costTimeMillis2 = measureTimeMillis {
+        println(countAndSay2(8))
+        println(countAndSay2(10))
+        println(countAndSay2(15))
+    }
+
+    println()
+    println()
+
+    println("Cost timeMillis:")
+    println("fun: $costTimeMillis")
+    println("fun2: $costTimeMillis2")
 }
 
+/**
+ * 依序計數並保存
+ */
 fun countAndSay(n: Int): String {
     var sayString = "1"
     var count = 1
@@ -32,6 +53,10 @@ fun countAndSay(n: Int): String {
     return sayString
 }
 
+/**
+ * 依序計數並保存
+ * 排除題目已給的答案
+ */
 fun countAndSay2(n: Int): String {
     var sayString = when {
         n <= 1 -> "1"
