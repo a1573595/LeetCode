@@ -1,22 +1,32 @@
 package easy
 
-// https://leetcode.com/problems/longest-common-prefix/
+import kotlin.system.measureTimeMillis
+
+/**
+ * longest-common-prefix
+ * https://leetcode.com/problems/longest-common-prefix/
+ */
 
 fun main() {
-    println(longestCommonPrefix(arrayOf()))
+    val costTimeMillis = measureTimeMillis {
+        println(longestCommonPrefix(arrayOf()))
+        println(longestCommonPrefix(arrayOf("", "")))
+        println(longestCommonPrefix(arrayOf("c", "c")))
+        println(longestCommonPrefix(arrayOf("aa", "aa")))
+        println(longestCommonPrefix(arrayOf("flower", "flow", "flight")))
+        println(longestCommonPrefix(arrayOf("a", "b")))
+    }
+
     println()
-    println(longestCommonPrefix(arrayOf("", "")))
     println()
-    println(longestCommonPrefix(arrayOf("c", "c")))
-    println()
-    println(longestCommonPrefix(arrayOf("aa", "aa")))
-    println()
-    println(longestCommonPrefix(arrayOf("flower", "flow", "flight")))
-    println()
-    println(longestCommonPrefix(arrayOf("a", "b")))
-    println()
+
+    println("Cost timeMillis:")
+    println("fun: $costTimeMillis")
 }
 
+/**
+ * 從第一個位元開始比對SubString即可
+ */
 fun longestCommonPrefix(strs: Array<String>): String {
     if (strs.isEmpty()) return ""
 

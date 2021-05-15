@@ -1,11 +1,19 @@
 package easy
 
-// https://leetcode.com/problems/merge-two-sorted-lists/
+/**
+ * merge-two-sorted-lists
+ * https://leetcode.com/problems/merge-two-sorted-lists/
+ */
 
 fun main() {
     showNode(mergeTwoLists(produceNode(intArrayOf(1, 2, 4)), produceNode(intArrayOf(1, 3, 4)))) // 1->1->2->3->4->4
 }
 
+/**
+ * 將所有數值加入List
+ * 利用List排序他們
+ * 完成後重新產生ListNode
+ */
 fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {
     if (l1 == null && l2 == null) return null
 

@@ -1,22 +1,42 @@
 package easy
 
-// https://leetcode.com/problems/maximum-subarray/
+import kotlin.system.measureTimeMillis
+
+/**
+ * maximum-subarray
+ * https://leetcode.com/problems/maximum-subarray/
+ */
 
 fun main() {
-    println(maxSubArray(intArrayOf(1, 2, 3, 4))) // 10
-    println(maxSubArray(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4))) // 6
-    println(maxSubArray(intArrayOf(-1))) // -1
+    val costTimeMillis = measureTimeMillis {
+        println(maxSubArray(intArrayOf(1, 2, 3, 4))) // 10
+        println(maxSubArray(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4))) // 6
+        println(maxSubArray(intArrayOf(-1))) // -1
+    }
 
-    println(maxSubArray2(intArrayOf(1, 2, 3, 4))) // 10
-    println(maxSubArray2(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4))) // 6
-    println(maxSubArray2(intArrayOf(-1))) // -1
+    val costTimeMillis2 = measureTimeMillis {
+        println(maxSubArray2(intArrayOf(1, 2, 3, 4))) // 10
+        println(maxSubArray2(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4))) // 6
+        println(maxSubArray2(intArrayOf(-1))) // -1
+    }
 
-    println(maxSubArray3(intArrayOf(1, 2, 3, 4))) // 10
-    println(maxSubArray3(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4))) // 6
-    println(maxSubArray3(intArrayOf(-1))) // -1
+    val costTimeMillis3 = measureTimeMillis {
+        println(maxSubArray3(intArrayOf(1, 2, 3, 4))) // 10
+        println(maxSubArray3(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4))) // 6
+        println(maxSubArray3(intArrayOf(-1))) // -1
+    }
+
+    println("Cost timeMillis:")
+    println("fun: $costTimeMillis")
+    println("fun2: $costTimeMillis2")
+    println("fun3: $costTimeMillis3")
 }
 
-// Time Limit Exceeded
+/**
+ * 比較所有的數字組合
+ * 沒有排除重複的
+ * 造成了Time Limit Exceeded
+ */
 fun maxSubArray(nums: IntArray): Int {
     var max = nums[0]
 
@@ -38,6 +58,9 @@ fun maxSubArray(nums: IntArray): Int {
     return max
 }
 
+/**
+ * 同上但排除了重複計算
+ */
 fun maxSubArray2(nums: IntArray): Int {
     var max = nums[0]
 
