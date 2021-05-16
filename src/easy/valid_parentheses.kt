@@ -1,27 +1,57 @@
 package easy
 
-import java.util.*
 import kotlin.collections.ArrayList
+import kotlin.system.measureTimeMillis
 
-// https://leetcode.com/problems/valid-parentheses/
+/**
+ * valid-parentheses
+ * https://leetcode.com/problems/valid-parentheses/
+ */
 
 fun main() {
-    println(isValid("()"))
-    println(isValid("()[]{}"))
-    println(isValid("(]"))
-    println(isValid("([)]"))
-    println(isValid("{[]}"))
+    val costTimeMillis = measureTimeMillis {
+        println(isValid("()"))  // true
+        println(isValid("()[]{}"))  // true
+        println(isValid("(]"))
+        println(isValid("([)]"))
+        println(isValid("{[]}"))  // true
+    }
 
     println()
     println()
 
-    println(isValid2("()"))
-    println(isValid2("()[]{}"))
-    println(isValid2("(]"))
-    println(isValid2("([)]"))
-    println(isValid2("{[]}"))
+    val costTimeMillis2 = measureTimeMillis {
+        println(isValid2("()"))  // true
+        println(isValid2("()[]{}"))  // true
+        println(isValid2("(]")) // false
+        println(isValid2("([)]")) // false
+        println(isValid2("{[]}"))  // true
+    }
+
+    println()
+    println()
+
+    val costTimeMillis3 = measureTimeMillis {
+        println(isValid3("()"))  // true
+        println(isValid3("()[]{}"))  // true
+        println(isValid3("(]")) // false
+        println(isValid3("([)]")) // false
+        println(isValid3("{[]}"))  // true
+    }
+
+    println()
+    println()
+
+    println("Cost timeMillis:")
+    println("fun: $costTimeMillis")
+    println("fun2: $costTimeMillis2")
+    println("fun3: $costTimeMillis3")
+
 }
 
+/**
+ * 放入陣列中計算
+ */
 fun isValid(str: String): Boolean {
     val charList = ArrayList<Char>()
 
@@ -40,6 +70,9 @@ fun isValid(str: String): Boolean {
     return charList.size == 0
 }
 
+/**
+ * 暴力法直接比對組合
+ */
 fun isValid2(str: String): Boolean {
     var str2 = str
 
@@ -50,34 +83,71 @@ fun isValid2(str: String): Boolean {
     return str2.isEmpty()
 }
 
+/**
+ * 當有對應符號出現
+ * 則下一個或最後一個符號應為對應符號
+ */
+fun isValid3(str: String): Boolean {
+    val strList = str.toMutableList()
 
-class Solution {
-    // Hash table that takes care of the mappings.
-    private val mappings: HashMap<Char, Char> = HashMap()
-
-    // Initialize hash map with mappings. This simply makes the code easier to read.
-    init {
-        mappings[')'] = '('
-        mappings['}'] = '{'
-        mappings[']'] = '['
-    }
-
-    fun isValid(s: String): Boolean { // Initialize a stack to be used in the algorithm.
-        val stack = Stack<Char>()
-        for (element in s) {
-            val c = element
-            // If the current character is a closing bracket.
-            if (mappings.containsKey(c)) { // Get the top element of the stack. If the stack is empty, set a dummy value of '#'
-                val topElement = if (stack.empty()) '#' else stack.pop()
-                // If the mapping for this bracket doesn't match the stack's top element, return false.
-                if (topElement != mappings[c]) {
-                    return false
+    while (strList.isNotEmpty()) {
+        when (strList.first()) {
+            '(' -> {
+                when {
+                    strList.size == 1 -> {
+                        return false
+                    }
+                    strList[1] == ')' -> {
+                        strList.removeAt(1)
+                        strList.removeAt(0)
+                    }
+                    strList.last() == ')' -> {
+                        strList.removeAt(strList.lastIndex)
+                        strList.removeAt(0)
+                    }
+                    else -> {
+                        return false
+                    }
                 }
-            } else { // If it was an opening bracket, push to the stack.
-                stack.push(c)
+            }
+            '{' -> {
+                when {
+                    strList.size == 1 -> {
+                        return false
+                    }
+                    strList[1] == '}' -> {
+                        strList.removeAt(1)
+                        strList.removeAt(0)
+                    }
+                    strList.last() == '}' -> {
+                        strList.removeAt(strList.lastIndex)
+                        strList.removeAt(0)
+                    }
+                    else -> {
+                        return false
+                    }
+                }
+            }
+            '[' -> {
+                when {
+                    strList.size == 1 -> {
+                        return false
+                    }
+                    strList[1] == ']' -> {
+                        strList.removeAt(1)
+                        strList.removeAt(0)
+                    }
+                    strList.last() == ']' -> {
+                        strList.removeAt(strList.lastIndex)
+                        strList.removeAt(0)
+                    }
+                    else -> {
+                        return false
+                    }
+                }
             }
         }
-        // If the stack still contains elements, then it is an invalid expression.
-        return stack.isEmpty()
     }
+
+    return true
 }

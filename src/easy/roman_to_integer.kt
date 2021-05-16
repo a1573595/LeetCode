@@ -1,36 +1,58 @@
 package easy
 
-// https://leetcode.com/problems/roman-to-integer/
-/*
-    Symbol       Value
-    I             1
-    V             5
-    X             10
-    L             50
-    C             100
-    D             500
-    M             1000
+import kotlin.system.measureTimeMillis
 
-    I can be placed before V (5) and X (10) to make 4 and 9.    IV  IX
-    X can be placed before L (50) and C (100) to make 40 and 90.    XL  XC
-    C can be placed before D (500) and M (1000) to make 400 and 900.    CD  CM
+/**
+ * roman-to-integer
+ * https://leetcode.com/problems/roman-to-integer/
+ *     Symbol       Value
+ *     I             1
+ *     V             5
+ *     X             10
+ *     L             50
+ *     C             100
+ *     D             500
+ *     M             1000
+ *
+ * I can be placed before V (5) and X (10) to make 4 and 9.    IV  IX
+ * X can be placed before L (50) and C (100) to make 40 and 90.    XL  XC
+ * C can be placed before D (500) and M (1000) to make 400 and 900.    CD  CM
+ * ex. III = 3、IV = 4、IX = 9、LVIII = 58、MCMXCIV = 1994
  */
+
 fun main() {
-    println(romanToInt("III"))  // 3
-    println(romanToInt("IV"))   // 4
-    println(romanToInt("IX"))   // 9
-    println(romanToInt("LVIII")) // 58
-    println(romanToInt("MCMXCIV"))  // 1994
+    val costTimeMillis = measureTimeMillis {
+        println(romanToInt("III"))  // 3
+        println(romanToInt("IV"))   // 4
+        println(romanToInt("IX"))   // 9
+        println(romanToInt("LVIII")) // 58
+        println(romanToInt("MCMXCIV"))  // 1994
+    }
 
     println()
+    println()
 
-    println(romanToInt2("III"))  // 3
-    println(romanToInt2("IV"))   // 4
-    println(romanToInt2("IX"))   // 9
-    println(romanToInt2("LVIII")) // 58
-    println(romanToInt2("MCMXCIV"))  // 1994
+    val costTimeMillis2 = measureTimeMillis {
+        println(romanToInt2("III"))  // 3
+        println(romanToInt2("IV"))   // 4
+        println(romanToInt2("IX"))   // 9
+        println(romanToInt2("LVIII")) // 58
+        println(romanToInt2("MCMXCIV"))  // 1994
+    }
+
+    println()
+    println()
+
+    println("Cost timeMillis:")
+    println("fun: $costTimeMillis")
+    println("fun2: $costTimeMillis2")
 }
 
+/**
+ * 建立對照表
+ * 先計算IV、CM等特殊字串
+ * 再將其他結果相加
+ */
 fun romanToInt(str: String): Int {
     var answer = 0
     var index = str.length - 1
@@ -114,28 +136,21 @@ fun value(r: Char): Int {
     return if (r == 'M') 1000 else -1
 }
 
-// Finds decimal value of a given romal numeral
-fun romanToInt2(str: String): Int { // Initialize result
-    var res = 0
-    var i = 0
-    while (i < str.length) {
-        // Getting value of symbol s[i]
-        val s1 = value(str[i])
-        // Getting value of symbol s[i+1]
-        if (i + 1 < str.length) {
-            val s2 = value(str[i + 1])
-            // Comparing both values
-            if (s1 >= s2) { // Value of current symbol is greater or equalto the next symbol
-                res += s1
-            } else {
-                res = res + s2 - s1
-                i++ // Value of current symbol is less than the next symbol
-            }
+/**
+ * 比較上個數值是否較小
+ * 若較小則表示要扣除並倒扣
+ * 若比較大則正常相加
+ */
+fun romanToInt2(str: String): Int {
+    var sum = 0
+
+    for (i in str.indices) {
+        sum = if (i >= 1 && value(str[i]) > value(str[i - 1])) {
+            sum + value(str[i]) - (value(str[i - 1]) * 2)
         } else {
-            res += s1
-            i++
+            sum + value(str[i])
         }
-        i++
     }
-    return res
+
+    return sum
 }

@@ -6,6 +6,7 @@ import kotlin.system.measureTimeMillis
  * reverse-integer
  * https://leetcode.com/problems/reverse-integer/
  */
+
 fun main() {
     val costTimeMillis = measureTimeMillis {
         println(reverse(123))
@@ -24,7 +25,9 @@ fun main() {
 }
 
 /**
- *
+ * 反轉數值
+ * 防止溢位反轉時要使用Long
+ * 並比較反轉結果是否超出Integer範圍
  */
 fun reverse(x: Int): Int {
     var y: Int = if (x < 0) -x else x

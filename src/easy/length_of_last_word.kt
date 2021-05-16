@@ -7,7 +7,6 @@ import kotlin.system.measureTimeMillis
  * https://leetcode.com/problems/length-of-last-word/
  * Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
  */
-//
 
 fun main() {
     val costTimeMillis = measureTimeMillis {

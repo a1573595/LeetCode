@@ -2,15 +2,21 @@ package easy
 
 import kotlin.system.measureTimeMillis
 
-// https://leetcode.com/problems/search-insert-position/
+/**
+ * search-insert-position
+ * https://leetcode.com/problems/search-insert-position/
+ */
 
 fun main() {
-    val costTimeMillis1 = measureTimeMillis {
+    val costTimeMillis = measureTimeMillis {
         println(searchInsert(intArrayOf(1, 3, 5, 6), 5))    // 2
         println(searchInsert(intArrayOf(1, 3, 5, 6), 2))    // 1
         println(searchInsert(intArrayOf(1, 3, 5, 6), 7))    // 4
         println(searchInsert(intArrayOf(1, 3, 5, 6), 0))    // 0
     }
+
+    println()
+    println()
 
     val costTimeMillis2 = measureTimeMillis {
         println(searchInsert2(intArrayOf(1, 3, 5, 6), 5))    // 2
@@ -19,10 +25,17 @@ fun main() {
         println(searchInsert2(intArrayOf(1, 3, 5, 6), 0))    // 0
     }
 
-    println(costTimeMillis1)
-    println(costTimeMillis2)
+    println()
+    println()
+
+    println("Cost timeMillis:")
+    println("fun: $costTimeMillis")
+    println("fun2: $costTimeMillis2")
 }
 
+/**
+ * 依序搜尋尋找插入位置
+ */
 fun searchInsert(nums: IntArray, target: Int): Int {
     var position = 0
 
@@ -35,6 +48,10 @@ fun searchInsert(nums: IntArray, target: Int): Int {
     return position
 }
 
+/**
+ * 同一
+ * 找到後使用Break跳出
+ */
 fun searchInsert2(nums: IntArray, target: Int): Int {
     var position = 0
 
