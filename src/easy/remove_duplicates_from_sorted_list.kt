@@ -1,5 +1,9 @@
 package easy
 
+import other.ListNode
+import other.produceNode
+import other.showNode
+
 /**
  * remove-duplicates-from-sorted-list
  * https://leetcode.com/problems/remove-duplicates-from-sorted-list/

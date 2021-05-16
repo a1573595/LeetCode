@@ -2,8 +2,8 @@ package medium
 
 import java.util.*
 
-
 /**
+ * 01-matrix
  * https://leetcode.com/problems/01-matrix/
  * Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell.
  * The distance between two adjacent cells is 1.
@@ -17,8 +17,10 @@ fun main() {
             intArrayOf(0, 0, 0)
         )
     ).forEach { println(it.toList()) }
+
     println()
     println()
+
     updateMatrix(
         arrayOf(
             intArrayOf(0, 0, 0),
@@ -26,15 +28,19 @@ fun main() {
             intArrayOf(1, 1, 1)
         )
     ).forEach { println(it.toList()) }
+
     println()
     println()
+
     updateMatrix(
         arrayOf(
             intArrayOf(0, 1)
         )
     ).forEach { println(it.toList()) }
+
     println()
     println()
+
     updateMatrix(
         arrayOf(
             intArrayOf(0),
@@ -43,13 +49,21 @@ fun main() {
     ).forEach { println(it.toList()) }
 }
 
+/**
+ * 找出最大步數
+ * 創建出另一個相同大小的二維陣列
+ * 將原先為0的數值保留
+ * 其餘變更為-1(尚未找到)
+ * 依序比對點的四周是否有非-1數值
+ * 代表找到對應步數
+ */
 fun updateMatrix(matrix: Array<IntArray>): Array<IntArray> {
     val maxValue = if (matrix[0].size > matrix.size) matrix[0].size else matrix.size
 
     val newMatrix = matrix.clone()
     newMatrix.forEach { it.forEachIndexed { index, value -> it[index] = if (value == 0) 0 else -1 } }
 
-    for (i in 1 until maxValue) {   // 矩陣內的數值
+    for (i in 1 until maxValue) {   // 距離0的步數
         for (y in matrix.indices) { //矩陣Y軸
             for (x in matrix[y].indices) {  //矩陣X軸
                 if (matrix[y][x] != -1) {

@@ -1,11 +1,11 @@
 package medium
 
-import easy.ListNode
-import easy.produceNode
-import easy.showNode
-
+import other.ListNode
+import other.produceNode
+import other.showNode
 
 /**
+ * insertion-sort-list
  * https://leetcode.com/problems/insertion-sort-list/
  * A graphical example of insertion sort. The partial sorted list (black) initially contains only the first element in the list.
  * With each iteration one element (red) is removed from the input data and inserted in-place into the sorted list
@@ -17,10 +17,15 @@ import easy.showNode
  */
 
 fun main() {
-    showNode(insertionSortList(produceNode(intArrayOf(4, 2, 1, 3)))) // 1, 2, 3, 4
+//    showNode(insertionSortList(produceNode(intArrayOf(4, 2, 1, 3)))) // 1, 2, 3, 4
     showNode(insertionSortList(produceNode(intArrayOf(-1, 5, 3, 4, 0)))) // -1, 0, 3, 4, 5
 }
 
+/**
+ * 生成一個新的Node
+ * 依照大小插入新數值
+ * 最後返回新的Node的next
+ */
 fun insertionSortList(head: ListNode?): ListNode? {
     val newHead = ListNode(0)
     var indexNode = newHead
