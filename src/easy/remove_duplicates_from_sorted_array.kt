@@ -40,6 +40,9 @@ fun main() {
         println(removeDuplicates3(intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4))) // [0, 1, 2, 3, 4]   5
     }
 
+    println()
+    println()
+
     println("Cost timeMillis:")
     println("fun: $costTimeMillis")
     println("fun2: $costTimeMillis2")

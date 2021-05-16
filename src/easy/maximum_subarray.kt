@@ -14,17 +14,26 @@ fun main() {
         println(maxSubArray(intArrayOf(-1))) // -1
     }
 
+    println()
+    println()
+
     val costTimeMillis2 = measureTimeMillis {
         println(maxSubArray2(intArrayOf(1, 2, 3, 4))) // 10
         println(maxSubArray2(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4))) // 6
         println(maxSubArray2(intArrayOf(-1))) // -1
     }
 
+    println()
+    println()
+
     val costTimeMillis3 = measureTimeMillis {
         println(maxSubArray3(intArrayOf(1, 2, 3, 4))) // 10
         println(maxSubArray3(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4))) // 6
         println(maxSubArray3(intArrayOf(-1))) // -1
     }
+
+    println()
+    println()
 
     println("Cost timeMillis:")
     println("fun: $costTimeMillis")

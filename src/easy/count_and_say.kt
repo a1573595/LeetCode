@@ -14,6 +14,9 @@ fun main() {
         println(countAndSay(15))
     }
 
+    println()
+    println()
+
     val costTimeMillis2 = measureTimeMillis {
         println(countAndSay2(8))
         println(countAndSay2(10))

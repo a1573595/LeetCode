@@ -13,6 +13,9 @@ fun main() {
         println(getClimbing(45))
     }
 
+    println()
+    println()
+
     val costTimeMillis2 = measureTimeMillis {
         println(getClimbing2(45))
     }
