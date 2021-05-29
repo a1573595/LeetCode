@@ -1,16 +1,26 @@
 package easy
 
+import kotlin.system.measureTimeMillis
+
 /**
  * plus-one
  * https://leetcode.com/problems/plus-one/
  */
 
 fun main() {
-    println(plusOne(intArrayOf(1, 2, 3)).contentToString())
-    println(plusOne(intArrayOf(4, 3, 2, 1)).contentToString())
-    println(plusOne(intArrayOf(0)).contentToString())
-    println(plusOne(intArrayOf(9, 9)).contentToString())
-    println(plusOne(intArrayOf(8, 9, 9, 9)).contentToString())
+    val costTimeMillis = measureTimeMillis {
+        println(plusOne(intArrayOf(1, 2, 3)).contentToString())
+        println(plusOne(intArrayOf(4, 3, 2, 1)).contentToString())
+        println(plusOne(intArrayOf(0)).contentToString())
+        println(plusOne(intArrayOf(9, 9)).contentToString())
+        println(plusOne(intArrayOf(8, 9, 9, 9)).contentToString())
+    }
+
+    println()
+    println()
+
+    println("Cost timeMillis:")
+    println("fun: $costTimeMillis")
 }
 
 /**
