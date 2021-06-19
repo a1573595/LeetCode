@@ -15,6 +15,7 @@ fun main() {
         println(twoSum2_1(intArrayOf(2, 3, 4), 6).joinToString())  // 1, 3
         println(twoSum2_1(intArrayOf(-1, 0), -1).joinToString()) // 1, 2
         println(twoSum2_1(intArrayOf(3, 3), 6).joinToString()) // 1, 2
+        println(twoSum2_1(intArrayOf(0, 0, 3, 4), 0).joinToString()) // 1, 2
     }
 
     println()
@@ -26,6 +27,7 @@ fun main() {
         println(twoSum2_2(intArrayOf(2, 3, 4), 6).joinToString())  // 1, 3
         println(twoSum2_2(intArrayOf(-1, 0), -1).joinToString()) // 1, 2
         println(twoSum2_2(intArrayOf(3, 3), 6).joinToString()) // 1, 2
+        println(twoSum2_2(intArrayOf(0, 0, 3, 4), 0).joinToString()) // 1, 2
     }
 
     println()
@@ -47,7 +49,7 @@ fun twoSum2_1(numbers: IntArray, target: Int): IntArray {
     for (i in numbers.indices) {
         val complement = target - numbers[i]
         if (map.containsKey(complement) && map[complement] != i) {
-            return intArrayOf(i+ 1, map[complement]!! + 1)
+            return intArrayOf(i + 1, map[complement]!! + 1)
         }
     }
     throw IllegalArgumentException("No two sum solution")
@@ -63,18 +65,20 @@ fun twoSum2_2(numbers: IntArray, target: Int): IntArray {
     var left = 0
     var right = numbers.size - 1
 
-    while (true) {
-        val sum = numbers[left] + numbers[right]
+    var sum: Int
+
+    do {
+        sum = numbers[left] + numbers[right]
+
         when {
             sum < target -> left++
             sum > target -> right--
             else -> {
                 answer[0] = left + 1
                 answer[1] = right + 1
-                break
             }
         }
-    }
+    } while (sum != target)
 
     return answer
 }
