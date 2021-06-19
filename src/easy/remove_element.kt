@@ -11,7 +11,7 @@ fun main() {
 }
 
 /**
- * 依序比對鏈結
+ * 依序比對陣列
  * 若為指定數值則將next往下移動
  */
 fun removeElement(nums: IntArray, redundantNum: Int): Int {
@@ -25,7 +25,6 @@ fun removeElement(nums: IntArray, redundantNum: Int): Int {
             index++
         }
     }
-
 
     return size
 }

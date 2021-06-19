@@ -1,5 +1,6 @@
 package easy;
 
+// 二分法
 class Find_value_Index {
     public static void main(String[] args) {
         System.out.println(solution(new int[]{1, 2, 5, 7, 9}, 5));  // 2
@@ -20,9 +21,6 @@ class Find_value_Index {
         int right = N - 1;
 
         while (left < right) {
-//            System.out.println("left:" + left);
-//            System.out.println("right:" + right);
-
             int m = (left + right) / 2;
             if (A[m] >= X) {
                 right = m;

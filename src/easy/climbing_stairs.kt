@@ -10,14 +10,14 @@ import kotlin.system.measureTimeMillis
 
 fun main() {
     val costTimeMillis = measureTimeMillis {
-        println(getClimbing(45))
+        println(getClimbing(45))    // 1836311903
     }
 
     println()
     println()
 
     val costTimeMillis2 = measureTimeMillis {
-        println(getClimbing2(45))
+        println(getClimbing2(45))    // 1836311903
     }
 
     println()

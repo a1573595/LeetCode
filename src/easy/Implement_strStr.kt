@@ -10,10 +10,10 @@ import kotlin.system.measureTimeMillis
 
 fun main() {
     val costTimeMillis = measureTimeMillis {
-        println(strStr("hello", "ll"))
-        println(strStr("aaaaa", "bba"))
-        println(strStr("", ""))
-        println(strStr("aaa", "aaaa"))
+        println(strStr("hello", "ll"))  // 2
+        println(strStr("aaaaa", "bba")) // -1
+        println(strStr("", "")) // 0
+        println(strStr("aaa", "aaaa"))  // -1
     }
 
     println()

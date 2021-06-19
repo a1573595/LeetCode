@@ -1,5 +1,6 @@
 package easy
 
+import java.lang.StringBuilder
 import kotlin.system.measureTimeMillis
 
 /**
@@ -45,10 +46,36 @@ fun main() {
     println()
     println()
 
+    val costTimeMillis4 = measureTimeMillis {
+        println(isPalindrome4(121))   // true
+        println(isPalindrome4(-121))    // false
+        println(isPalindrome4(10))  // false
+        println(isPalindrome4(-10)) // false
+        println(isPalindrome4(1234321))   // true
+        println(isPalindrome4(123321))    // true
+    }
+
+    println()
+    println()
+
+    val costTimeMillis5 = measureTimeMillis {
+        println(isPalindrome5(121))   // true
+        println(isPalindrome5(-121))    // false
+        println(isPalindrome5(10))  // false
+        println(isPalindrome5(-10)) // false
+        println(isPalindrome5(1234321))   // true
+        println(isPalindrome5(123321))    // true
+    }
+
+    println()
+    println()
+
     println("Cost timeMillis:")
     println("fun: $costTimeMillis")
     println("fun2: $costTimeMillis2")
     println("fun3: $costTimeMillis3")
+    println("fun4: $costTimeMillis4")
+    println("fun5: $costTimeMillis5")
 }
 
 /**
@@ -101,6 +128,7 @@ fun isPalindrome2(x: Int): Boolean {
 /**
  * 將數值直接倒過來
  * 並比較兩者是否相等
+ * 可能會發生Overflow
  */
 fun isPalindrome3(x: Int): Boolean {
     if (x < 0) return false    // 小於零
@@ -113,4 +141,33 @@ fun isPalindrome3(x: Int): Boolean {
     }
 
     return x == revertedNumber
+}
+
+/**
+ * 將數值轉成字串
+ * 透過StringBuilder重組後比對
+ */
+fun isPalindrome4(x: Int): Boolean {
+    val originStr = x.toString()
+    val newStrBuilder = StringBuilder()
+
+    originStr.forEach {
+        newStrBuilder.insert(0, it)
+    }
+
+    return originStr == newStrBuilder.toString()
+}
+
+/**
+ * 同4改用String比對效能
+ */
+fun isPalindrome5(x: Int): Boolean {
+    val originStr = x.toString()
+    var newStr = ""
+
+    originStr.forEach {
+        newStr = it + newStr
+    }
+
+    return originStr == newStr
 }

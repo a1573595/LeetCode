@@ -9,18 +9,18 @@ import kotlin.system.measureTimeMillis
 
 fun main() {
     val costTimeMillis = measureTimeMillis {
-        println(countAndSay(8))
-        println(countAndSay(10))
-        println(countAndSay(15))
+        println(countAndSay(8)) // 1113213211
+        println(countAndSay(10))    // 13211311123113112211
+        println(countAndSay(15))    // 311311222113111231131112132112311321322112111312211312111322212311322113212221
     }
 
     println()
     println()
 
     val costTimeMillis2 = measureTimeMillis {
-        println(countAndSay2(8))
-        println(countAndSay2(10))
-        println(countAndSay2(15))
+        println(countAndSay2(8))    // 1113213211
+        println(countAndSay2(10))   // 13211311123113112211
+        println(countAndSay2(15))   // 3113112221131112311311121321123113213221121113122113121113222123113221132
     }
 
     println()
@@ -68,8 +68,8 @@ fun countAndSay2(n: Int): String {
         n == 4 -> "1211"
         else -> "111221"
     }
-    var count = 1
 
+    var count = 1
     for (i in 6..n) {
         val temString = sayString
         sayString = ""

@@ -9,12 +9,12 @@ import kotlin.system.measureTimeMillis
 
 fun main() {
     val costTimeMillis = measureTimeMillis {
-        println(longestCommonPrefix(arrayOf()))
-        println(longestCommonPrefix(arrayOf("", "")))
-        println(longestCommonPrefix(arrayOf("c", "c")))
-        println(longestCommonPrefix(arrayOf("aa", "aa")))
-        println(longestCommonPrefix(arrayOf("flower", "flow", "flight")))
-        println(longestCommonPrefix(arrayOf("a", "b")))
+        println(longestCommonPrefix(arrayOf())) //
+        println(longestCommonPrefix(arrayOf("", "")))   //
+        println(longestCommonPrefix(arrayOf("c", "c"))) // c
+        println(longestCommonPrefix(arrayOf("aa", "aa")))   // aa
+        println(longestCommonPrefix(arrayOf("flower", "flow", "flight")))   // fl
+        println(longestCommonPrefix(arrayOf("a", "b"))) //
     }
 
     println()

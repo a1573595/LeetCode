@@ -9,35 +9,34 @@ import kotlin.system.measureTimeMillis
  */
 
 fun main() {
-//    println(countPrimes(0))
-//    println(countPrimes(2))
-//    println(countPrimes(10))
-//    println(countPrimes(100))
-//    println()
-//    println()
-//    println(countPrimes2(0))
-//    println(countPrimes2(2))
-//    println(countPrimes2(10))
-//    println(countPrimes2(100))
-//    println()
-//    println()
-//    println(countPrimes3(0))
-//    println(countPrimes3(2))
-//    println(countPrimes3(10))
-//    println(countPrimes3(100))
-//    println()
-//    println()
-
     val costTimeMillis = measureTimeMillis {
-        println(countPrimes(499979))
+        println(countPrimes(0))         // 0
+        println(countPrimes(2))         // 0
+        println(countPrimes(10))        // 4
+        println(countPrimes(100))       // 25
+        println(countPrimes(499979))    // 41537
     }
+
+    println()
+    println()
 
     val costTimeMillis2 = measureTimeMillis {
-        println(countPrimes2(499979))
+        println(countPrimes2(0))        // 0
+        println(countPrimes2(2))        // 0
+        println(countPrimes2(10))       // 4
+        println(countPrimes2(100))      // 25
+        println(countPrimes2(499979))   // 41537
     }
 
+    println()
+    println()
+
     val costTimeMillis3 = measureTimeMillis {
-        println(countPrimes3(499979))
+        println(countPrimes3(0))        // 0
+        println(countPrimes3(2))        // 0
+        println(countPrimes3(10))       // 4
+        println(countPrimes3(100))      // 25
+        println(countPrimes3(499979))   // 41537
     }
 
     println()

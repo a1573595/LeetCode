@@ -1,5 +1,6 @@
 package easy
 
+import java.lang.StringBuilder
 import kotlin.system.measureTimeMillis
 
 /**
@@ -18,10 +19,19 @@ fun main() {
     println()
     println()
 
+    val costTimeMillis2 = measureTimeMillis {
+        println(reverse2(123))
+        println(reverse2(-123))
+        println(reverse2(120))
+        println(reverse2(1534236469))
+    }
+
+    println()
+    println()
+
     println("Cost timeMillis:")
     println("fun: $costTimeMillis")
-
-//    println("Max Integer length: ${Integer.toBinaryString(Int.MAX_VALUE).length}")
+    println("fun2: $costTimeMillis2")
 }
 
 /**
@@ -39,4 +49,21 @@ fun reverse(x: Int): Int {
     }
 
     return if (z > Int.MAX_VALUE || z < Int.MIN_VALUE) 0 else if (x < 0) -z.toInt() else z.toInt()
+}
+
+/**
+ * 轉為字串並反轉
+ * 比較反轉結果是否超出Integer範圍
+ */
+fun reverse2(x: Int): Int {
+    val numStr = if (x >= 0) x.toString() else (x * -1).toString()
+    val strBuilder = StringBuilder()
+
+    numStr.forEach {
+        strBuilder.insert(0, it)
+    }
+
+    val newNum = strBuilder.toString().toLong()
+
+    return if (newNum > Int.MAX_VALUE || newNum < Int.MIN_VALUE) 0 else if (x < 0) -newNum.toInt() else newNum.toInt()
 }

@@ -1,5 +1,7 @@
 package easy
 
+import kotlin.system.measureTimeMillis
+
 /**
  * add-binary
  * https://leetcode.com/problems/add-binary/
@@ -14,14 +16,25 @@ fun main() {
 //        )
 //    )  // 10101
 
-    println(addBinary2("11", "1"))   // 100
-    println(addBinary2("1010", "1011"))  // 10101
-    println(
-        addBinary2(
-            "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101",
-            "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011"
-        )
-    )  // 10101
+    println()
+    println()
+
+    val costTimeMillis2 = measureTimeMillis {
+        println(addBinary2("11", "1"))   // 100
+        println(addBinary2("1010", "1011"))  // 10101
+        println(
+            addBinary2(
+                "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101",
+                "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011"
+            )
+        )  // 10101
+    }
+
+    println()
+    println()
+
+    println("Cost timeMillis:")
+    println("fun2: $costTimeMillis2")
 }
 
 /**
