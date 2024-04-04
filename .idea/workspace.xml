@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79f1d7f7-50b3-4373-a872-7918a63ac116" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/766.toeplitz_matrix.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/766.toeplitz_matrix.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/747.largest_number_at_least_twice_of_others.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/747.largest_number_at_least_twice_of_others.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Dart File" />
         <option value="Kotlin File" />
+        <option value="Dart File" />
       </list>
     </option>
   </component>
@@ -47,6 +47,7 @@
     "Dart Command Line App.3.longest_substring_without_repeating_characters.dart.executor": "Run",
     "Dart Command Line App.452.minimum_number_of_arrows_to_burst_balloons.dart.executor": "Run",
     "Dart Command Line App.70.climbing_stairs.dart.executor": "Run",
+    "Dart Command Line App.747.largest_number_at_least_twice_of_others.dart.executor": "Run",
     "Dart Command Line App.766.toeplitz_matrix.dart.executor": "Run",
     "Dart Command Line App.test.dart.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
@@ -56,6 +57,7 @@
     "Kotlin._3_longest_substring_without_repeating_charactersKt.executor": "Run",
     "Kotlin._452_minimum_number_of_arrows_to_burst_balloonsKt.executor": "Run",
     "Kotlin._70_climbing_stairsKt.executor": "Run",
+    "Kotlin._747_largest_number_at_least_twice_of_othersKt.executor": "Run",
     "Kotlin._766_toeplitz_matrixKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -70,9 +72,9 @@
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
-  <component name="RunManager" selected="Dart Command Line App.766.toeplitz_matrix.dart">
-    <configuration name="1290.convert_binary_number_in_a_linked_list_to_integer.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/lib/1290.convert_binary_number_in_a_linked_list_to_integer.dart" />
+  <component name="RunManager" selected="Kotlin._747_largest_number_at_least_twice_of_othersKt">
+    <configuration name="747.largest_number_at_least_twice_of_others.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/lib/747.largest_number_at_least_twice_of_others.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/lib" />
       <method v="2" />
     </configuration>
@@ -88,10 +90,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_1_two_sumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_two_sumKt" />
+    <configuration name="_747_largest_number_at_least_twice_of_othersKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_747_largest_number_at_least_twice_of_othersKt" />
       <module name="LeetCode" />
-      <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,19 +105,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Dart Command Line App.747.largest_number_at_least_twice_of_others.dart" />
       <item itemvalue="Dart Command Line App.766.toeplitz_matrix.dart" />
-      <item itemvalue="Dart Command Line App.1290.convert_binary_number_in_a_linked_list_to_integer.dart" />
+      <item itemvalue="Kotlin._747_largest_number_at_least_twice_of_othersKt" />
       <item itemvalue="Kotlin._766_toeplitz_matrixKt" />
       <item itemvalue="Kotlin._1290_convert_binary_number_in_a_linked_list_to_integerKt" />
-      <item itemvalue="Kotlin._1_two_sumKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._747_largest_number_at_least_twice_of_othersKt" />
+        <item itemvalue="Dart Command Line App.747.largest_number_at_least_twice_of_others.dart" />
         <item itemvalue="Dart Command Line App.766.toeplitz_matrix.dart" />
         <item itemvalue="Kotlin._766_toeplitz_matrixKt" />
         <item itemvalue="Kotlin._1290_convert_binary_number_in_a_linked_list_to_integerKt" />
-        <item itemvalue="Dart Command Line App.1290.convert_binary_number_in_a_linked_list_to_integer.dart" />
-        <item itemvalue="Kotlin._1_two_sumKt" />
       </list>
     </recent_temporary>
   </component>
