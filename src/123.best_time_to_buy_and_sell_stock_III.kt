@@ -14,10 +14,10 @@ fun maxProfit3(prices: IntArray): Int {
     var sell2 = 0
 
     for (i in 1..<prices.size) {
-        buy1 = buy1.coerceAtLeast(-prices[i])
-        sell1 = sell1.coerceAtLeast(buy1 + prices[i])
-        buy2 = buy2.coerceAtLeast(sell1 - prices[i])
-        sell2 = sell2.coerceAtLeast(buy2 + prices[i])
+        buy1 = Math.max(buy1, -prices[i])
+        sell1 = Math.max(sell1, buy1 + prices[i])
+        buy2 = Math.max(buy2, sell1 - prices[i])
+        sell2 = Math.max(sell2, buy2 + prices[i])
     }
 
     return sell2
