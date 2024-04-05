@@ -6,16 +6,15 @@ void main() {
 }
 
 int maxProfit(List<int> prices) {
-  var last = prices.first;
   var price = 0;
+  var lastValue = prices.first;
 
-  for (var i = 1; i < prices.length; i++) {
-    if (prices[i] > last) {
-      price += prices[i] - last;
-      last = prices[i];
-    } else {
-      last = prices[i];
+  for (int i = 1; i < prices.length; i++) {
+    if (prices[i] > lastValue) {
+      price += prices[i] - lastValue;
     }
+
+    lastValue = prices[i];
   }
 
   return price;

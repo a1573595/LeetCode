@@ -6,27 +6,6 @@ void main() {
   print(maxProfit([1, 2]));
 }
 
-/// Time Limit Exceeded
-// int maxProfit(List<int> prices) {
-//   var max = 0;
-
-//   for (int i = 0; i < prices.length; i++) {
-//     for (int j = i + 1; j < prices.length; j++) {
-//       if (prices[j] < prices[i]) {
-//         break;
-//       } else {
-//         final value = prices[j] - prices[i];
-
-//         if (value > max) {
-//           max = value;
-//         }
-//       }
-//     }
-//   }
-
-//   return max;
-// }
-
 int maxProfit(List<int> prices) {
   var maxPrice = 0;
   var minValue = prices.first;

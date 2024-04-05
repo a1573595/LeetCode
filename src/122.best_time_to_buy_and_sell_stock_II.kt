@@ -6,8 +6,8 @@ fun main() {
 }
 
 fun maxProfit2(prices: IntArray): Int {
-    var last = prices.first()
     var price = 0
+    var last = prices.first()
 
     for (i in 1..<prices.size) {
         if (prices[i] > last) {
@@ -15,7 +15,6 @@ fun maxProfit2(prices: IntArray): Int {
         }
 
         last = prices[i]
-
     }
 
     return price
