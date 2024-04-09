@@ -11,16 +11,13 @@ void main() {
 }
 
 bool isToeplitzMatrix(List<List<int>> matrix) {
-  if (matrix.length <= 1 || matrix.first.length <= 1) {
-    return true;
-  }
-
-  for (int y = 1; y < matrix.length; y++) {
-    for (int x = 1; x < matrix[y].length; x++) {
-      if (matrix[y - 1][x - 1] != matrix[y][x]) {
+  for (int y = 0; y < matrix.length - 1; y++) {
+    for (int x = 0; x < matrix.first.length - 1; x++) {
+      if (matrix[y][x] != matrix[y + 1][x + 1]) {
         return false;
       }
     }
   }
+
   return true;
 }
