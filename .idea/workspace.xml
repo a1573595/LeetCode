@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79f1d7f7-50b3-4373-a872-7918a63ac116" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/287.find_the_duplicate_number.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/287.find_the_duplicate_number.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/206.reverse_linked_list.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/206.reverse_linked_list.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/other/list_node.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/other/list_node.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/list_node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/list_node.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Dart File" />
         <option value="Kotlin File" />
+        <option value="Dart File" />
       </list>
     </option>
   </component>
@@ -54,6 +56,7 @@
     "Dart Command Line App.15.3Sum.dart.executor": "Run",
     "Dart Command Line App.188.best_time_to_buy_and_sell_stock_IV.dart.executor": "Run",
     "Dart Command Line App.204.count_primes.dart.executor": "Run",
+    "Dart Command Line App.206.reverse_linked_list.dart.executor": "Run",
     "Dart Command Line App.268.missing_number.dart.executor": "Run",
     "Dart Command Line App.287.find_the_duplicate_number.dart.executor": "Run",
     "Dart Command Line App.3.longest_substring_without_repeating_characters.dart.executor": "Run",
@@ -82,6 +85,7 @@
     "Kotlin._188_best_time_to_buy_and_sell_stock_IVKt.executor": "Run",
     "Kotlin._1_two_sumKt.executor": "Run",
     "Kotlin._204_count_primesKt.executor": "Run",
+    "Kotlin._206_reverse_linked_listKt.executor": "Run",
     "Kotlin._268_missing_numberKt.executor": "Run",
     "Kotlin._287_find_the_duplicate_numberKt.executor": "Run",
     "Kotlin._309_best_time_to_buy_and_sell_stock_with_cooldownKt.executor": "Run",
@@ -113,9 +117,9 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Dart Command Line App.287.find_the_duplicate_number.dart">
-    <configuration name="268.missing_number.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/lib/268.missing_number.dart" />
+  <component name="RunManager" selected="Dart Command Line App.206.reverse_linked_list.dart">
+    <configuration name="206.reverse_linked_list.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/lib/206.reverse_linked_list.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/lib" />
       <method v="2" />
     </configuration>
@@ -123,6 +127,13 @@
       <option name="filePath" value="$PROJECT_DIR$/lib/287.find_the_duplicate_number.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/lib" />
       <method v="2" />
+    </configuration>
+    <configuration name="_206_reverse_linked_listKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_206_reverse_linked_listKt" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="_268_missing_numberKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_268_missing_numberKt" />
@@ -138,27 +149,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_75_sort_colorsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_75_sort_colorsKt" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Dart Command Line App.206.reverse_linked_list.dart" />
       <item itemvalue="Dart Command Line App.287.find_the_duplicate_number.dart" />
-      <item itemvalue="Dart Command Line App.268.missing_number.dart" />
+      <item itemvalue="Kotlin._206_reverse_linked_listKt" />
       <item itemvalue="Kotlin._287_find_the_duplicate_numberKt" />
       <item itemvalue="Kotlin._268_missing_numberKt" />
-      <item itemvalue="Kotlin._75_sort_colorsKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Dart Command Line App.206.reverse_linked_list.dart" />
+        <item itemvalue="Kotlin._206_reverse_linked_listKt" />
         <item itemvalue="Dart Command Line App.287.find_the_duplicate_number.dart" />
         <item itemvalue="Kotlin._287_find_the_duplicate_numberKt" />
         <item itemvalue="Kotlin._268_missing_numberKt" />
-        <item itemvalue="Dart Command Line App.268.missing_number.dart" />
-        <item itemvalue="Kotlin._75_sort_colorsKt" />
       </list>
     </recent_temporary>
   </component>
