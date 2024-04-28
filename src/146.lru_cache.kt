@@ -22,12 +22,12 @@ fun main() {
     println(cache2.get(2))       // -1
 }
 
-class Node(val key: Int, var value: Int) {
+private class Node(val key: Int, var value: Int) {
     var previous: Node? = null
     var next: Node? = null
 }
 
-class LRUCache(val capacity: Int) {
+private class LRUCache(val capacity: Int) {
     private val map: HashMap<Int, Node> = hashMapOf()
 
     private var head: Node = Node(0, 0)
