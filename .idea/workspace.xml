@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79f1d7f7-50b3-4373-a872-7918a63ac116" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/other/stack_queue.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/other/stack_queue.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/other/collection_intersetion.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/other/collection_intersetion.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/146.lru_cache.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/146.lru_cache.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
         <option value="Dart File" />
       </list>
     </option>
@@ -71,8 +70,10 @@
     "Dart Command Line App.79.word_search.dart.executor": "Run",
     "Dart Command Line App.91.decode_ways.dart.executor": "Run",
     "Dart Command Line App.N.you_can_say_11.dart.executor": "Run",
+    "Dart Command Line App.collection_intersetion.dart.executor": "Run",
     "Dart Command Line App.stack_queue.dart.executor": "Run",
     "Dart Command Line App.test.dart.executor": "Run",
+    "Kotlin.Collection_intersetionKt.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "Kotlin.Stack_queueKt.executor": "Run",
     "Kotlin._108_convert_sorted_array_to_binary_search_treeKt.executor": "Run",
@@ -120,16 +121,23 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Dart Command Line App.stack_queue.dart">
-    <configuration name="48.rotate_image.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/lib/48.rotate_image.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/lib" />
+  <component name="RunManager" selected="Dart Command Line App.collection_intersetion.dart">
+    <configuration name="collection_intersetion.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/lib/other/collection_intersetion.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/lib/other" />
       <method v="2" />
     </configuration>
     <configuration name="stack_queue.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/lib/other/stack_queue.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/lib/other" />
       <method v="2" />
+    </configuration>
+    <configuration name="Collection_intersetionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="other.Collection_intersetionKt" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Stack_queueKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="other.Stack_queueKt" />
@@ -145,27 +153,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_48_rotate_image_dartKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_48_rotate_image_dartKt" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Dart Command Line App.collection_intersetion.dart" />
       <item itemvalue="Dart Command Line App.stack_queue.dart" />
-      <item itemvalue="Dart Command Line App.48.rotate_image.dart" />
+      <item itemvalue="Kotlin.Collection_intersetionKt" />
       <item itemvalue="Kotlin.Stack_queueKt" />
       <item itemvalue="Kotlin._146_lru_cacheKt" />
-      <item itemvalue="Kotlin._48_rotate_image_dartKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Dart Command Line App.collection_intersetion.dart" />
+        <item itemvalue="Kotlin.Collection_intersetionKt" />
         <item itemvalue="Dart Command Line App.stack_queue.dart" />
         <item itemvalue="Kotlin.Stack_queueKt" />
         <item itemvalue="Kotlin._146_lru_cacheKt" />
-        <item itemvalue="Dart Command Line App.48.rotate_image.dart" />
-        <item itemvalue="Kotlin._48_rotate_image_dartKt" />
       </list>
     </recent_temporary>
   </component>
