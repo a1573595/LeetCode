@@ -1,6 +1,7 @@
 fun main() {
     println(maxProfit(2, intArrayOf(2, 4, 1)))
     println(maxProfit(2, intArrayOf(3, 2, 6, 5, 0, 3)))
+    println(maxProfit(1, intArrayOf(1, 2)))
 }
 
 fun maxProfit(k: Int, prices: IntArray): Int {

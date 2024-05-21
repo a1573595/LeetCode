@@ -9,22 +9,46 @@ fun minSubArrayLen(target: Int, nums: IntArray): Int {
     var sum = 0
     var len = 0
 
-    var left = 0
+    for (i in nums.indices) {
+        var left = 1
+        sum = nums[i]
 
-    for(right in nums.indices) {
-        sum += nums[right]
+        while (sum < target && (i + left) < nums.size) {
+            sum += nums[i + left]
+            left++
+        }
 
-        while (sum >= target) {
+        if (sum >= target) {
             if (len != 0) {
-              len = Math.min(len, right + 1 - left)
+                len = Math.min(len, left)
             } else {
-              len = right + 1 - left
+                len = left
             }
-      
-            sum -= nums[left]
-            left += 1
-          }
+        }
     }
 
     return len
+
+
+//    var sum = 0
+//    var len = 0
+//
+//    var left = 0
+//
+//    for(right in nums.indices) {
+//        sum += nums[right]
+//
+//        while (sum >= target) {
+//            if (len != 0) {
+//              len = Math.min(len, right + 1 - left)
+//            } else {
+//              len = right + 1 - left
+//            }
+//
+//            sum -= nums[left]
+//            left += 1
+//          }
+//    }
+//
+//    return len
 }

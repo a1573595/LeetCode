@@ -5,17 +5,18 @@ void main() {
 }
 
 List<int> twoSum2(List<int> numbers, int target) {
-  final map = {};
+  var left = 0;
+  var right = numbers.length - 1;
 
-  for (int i = 0; i < numbers.length; i++) {
-    map[numbers[i]] = i;
-  }
+  while (left < right) {
+    final value = numbers[left] + numbers[right];
 
-  for (int i = 0; i < numbers.length; i++) {
-    final i2 = map[target - numbers[i]];
-
-    if (i2 != null && i != i2) {
-      return [i + 1, i2 + 1];
+    if (value == target) {
+      return [left + 1, right + 1];
+    } else if (value < target) {
+      left++;
+    } else {
+      right--;
     }
   }
 

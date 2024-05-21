@@ -10,6 +10,7 @@ fun main() {
     println(trailingZeroes(15))
 }
 
+/// todo
 fun trailingZeroes(n: Int): Int {
     var result: Int = 0
     var currentFactor: Int = 5

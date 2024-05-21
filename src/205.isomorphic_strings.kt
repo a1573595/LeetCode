@@ -2,6 +2,7 @@ fun main() {
     println(isIsomorphic("egg", "add"))
     println(isIsomorphic("foo", "bar"))
     println(isIsomorphic("paper", "title"))
+    println(isIsomorphic("badc", "baba"))
 }
 
 fun isIsomorphic(s: String, t: String): Boolean {

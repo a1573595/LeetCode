@@ -5,17 +5,16 @@ fun main() {
 }
 
 fun twoSum2(numbers: IntArray, target: Int): IntArray {
-    val map = mutableMapOf<Int, Int>()
+    var left = 0
+    var right = numbers.size - 1
 
-    for (i in numbers.indices) {
-        map[numbers[i]] = i
-    }
+    while (left < right) {
+        val value = numbers[left] + numbers[right]
 
-    for (i in numbers.indices) {
-        val i2 = map[target - numbers[i]]
-
-        if (i2 != null && i != i2) {
-            return intArrayOf(i + 1, i2 + 1)
+        when {
+            value == target -> return intArrayOf(left + 1, right + 1)
+            value < target -> left++
+            else -> right--
         }
     }
 
