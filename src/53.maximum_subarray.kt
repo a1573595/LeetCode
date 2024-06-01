@@ -11,7 +11,7 @@ fun maxSubArray(nums: IntArray): Int {
     var maxSum = nums.first()
 
     for (i in 1..<nums.size) {
-        curSum = Math.max(curSum + nums[i], +nums[i])
+        curSum = Math.max(curSum + nums[i], nums[i])
         maxSum = Math.max(maxSum, curSum)
     }
 

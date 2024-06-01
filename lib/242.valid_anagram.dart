@@ -1,6 +1,9 @@
 void main() {
   print(isAnagram("anagram", "nagaram"));
   print(isAnagram("rat", "car"));
+  print("");
+  print(isAnagramV2("anagram", "nagaram"));
+  print(isAnagramV2("rat", "car"));
 }
 
 bool isAnagram(String s, String t) {
@@ -28,4 +31,18 @@ bool isAnagram(String s, String t) {
   });
 
   return isSame;
+}
+
+bool isAnagramV2(String s, String t) {
+  final array = List.generate(26, (index) => 0);
+
+  for (var i = 0; i < s.length; i++) {
+    array[s[i].codeUnitAt(0) - 'a'.codeUnitAt(0)] += 1;
+  }
+
+  for (var i = 0; i < t.length; i++) {
+    array[t[i].codeUnitAt(0) - 'a'.codeUnitAt(0)] -= 1;
+  }
+
+  return !array.any((e) => e != 0);
 }

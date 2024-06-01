@@ -11,7 +11,7 @@ fun climbStairs(n: Int): Int {
         1 -> 1
         2 -> 2
         else -> {
-            var theOneBeforeLast = 1
+            var theOneBeforeLast: Int
             var pervious = 2
 
             var step = 3
