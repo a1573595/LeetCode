@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79f1d7f7-50b3-4373-a872-7918a63ac116" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/442.find_all_duplicates_in_an_array.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/442.find_all_duplicates_in_an_array.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/54.spiral_matrix.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/54.spiral_matrix.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +68,7 @@
     "Dart Command Line App.452.minimum_number_of_arrows_to_burst_balloons.dart.executor": "Run",
     "Dart Command Line App.48.rotate_image.dart.executor": "Run",
     "Dart Command Line App.53.maximum_subarray.dart.executor": "Run",
+    "Dart Command Line App.54.spiral_matrix.dart.executor": "Run",
     "Dart Command Line App.70.climbing_stairs.dart.executor": "Run",
     "Dart Command Line App.747.largest_number_at_least_twice_of_others.dart.executor": "Run",
     "Dart Command Line App.75.sort_colors.dart.executor": "Run",
@@ -117,6 +118,7 @@
     "Kotlin._452_minimum_number_of_arrows_to_burst_balloonsKt.executor": "Run",
     "Kotlin._48_rotate_image_dartKt.executor": "Run",
     "Kotlin._53_maximum_subarrayKt.executor": "Run",
+    "Kotlin._54_spiral_matrixKt.executor": "Run",
     "Kotlin._70_climbing_stairsKt.executor": "Run",
     "Kotlin._747_largest_number_at_least_twice_of_othersKt.executor": "Run",
     "Kotlin._75_sort_colorsKt.executor": "Run",
@@ -143,9 +145,9 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin._442_find_all_duplicates_in_an_arrayKt">
-    <configuration name="242.valid_anagram.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/lib/242.valid_anagram.dart" />
+  <component name="RunManager" selected="Kotlin._54_spiral_matrixKt">
+    <configuration name="54.spiral_matrix.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/lib/54.spiral_matrix.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/lib" />
       <method v="2" />
     </configuration>
@@ -154,15 +156,15 @@
       <option name="workingDirectory" value="$PROJECT_DIR$/lib" />
       <method v="2" />
     </configuration>
-    <configuration name="_242_valid_anagramKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_242_valid_anagramKt" />
+    <configuration name="_442_find_all_duplicates_in_an_arrayKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_442_find_all_duplicates_in_an_arrayKt" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_442_find_all_duplicates_in_an_arrayKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_442_find_all_duplicates_in_an_arrayKt" />
+    <configuration name="_54_spiral_matrixKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_54_spiral_matrixKt" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,19 +178,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Dart Command Line App.54.spiral_matrix.dart" />
       <item itemvalue="Dart Command Line App.8.string_to_integer(atoi).dart" />
-      <item itemvalue="Dart Command Line App.242.valid_anagram.dart" />
+      <item itemvalue="Kotlin._54_spiral_matrixKt" />
       <item itemvalue="Kotlin._442_find_all_duplicates_in_an_arrayKt" />
       <item itemvalue="Kotlin._8_string_to_integer_atoi_Kt" />
-      <item itemvalue="Kotlin._242_valid_anagramKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._54_spiral_matrixKt" />
+        <item itemvalue="Dart Command Line App.54.spiral_matrix.dart" />
         <item itemvalue="Kotlin._442_find_all_duplicates_in_an_arrayKt" />
         <item itemvalue="Kotlin._8_string_to_integer_atoi_Kt" />
         <item itemvalue="Dart Command Line App.8.string_to_integer(atoi).dart" />
-        <item itemvalue="Dart Command Line App.242.valid_anagram.dart" />
-        <item itemvalue="Kotlin._242_valid_anagramKt" />
       </list>
     </recent_temporary>
   </component>
