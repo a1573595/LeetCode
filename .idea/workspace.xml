@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79f1d7f7-50b3-4373-a872-7918a63ac116" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/54.spiral_matrix.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/54.spiral_matrix.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/92.reverse_linked_list_II.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/92.reverse_linked_list_II.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/70.climbing_stairs.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/70.climbing_stairs.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/other/list_node.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/other/list_node.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Kotlin File" />
         <option value="Dart File" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -77,6 +79,7 @@
     "Dart Command Line App.8.string_to_integer(atoi).dart.executor": "Run",
     "Dart Command Line App.88.merge_sorted_array.dart.executor": "Run",
     "Dart Command Line App.91.decode_ways.dart.executor": "Run",
+    "Dart Command Line App.92.reverse_linked_list_II.dart.executor": "Run",
     "Dart Command Line App.N.qnantatw.dart.executor": "Run",
     "Dart Command Line App.N.you_can_say_11.dart.executor": "Run",
     "Dart Command Line App.collection_intersetion.dart.executor": "Run",
@@ -127,6 +130,7 @@
     "Kotlin._88_merge_sorted_arrayKt.executor": "Run",
     "Kotlin._8_string_to_integer_atoi_Kt.executor": "Run",
     "Kotlin._91_decode_waysKt.executor": "Run",
+    "Kotlin._92_reverse_linked_list_IIKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -145,14 +149,14 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin._54_spiral_matrixKt">
+  <component name="RunManager" selected="Kotlin._92_reverse_linked_list_IIKt">
     <configuration name="54.spiral_matrix.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/lib/54.spiral_matrix.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/lib" />
       <method v="2" />
     </configuration>
-    <configuration name="8.string_to_integer(atoi).dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/lib/8.string_to_integer(atoi).dart" />
+    <configuration name="92.reverse_linked_list_II.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/lib/92.reverse_linked_list_II.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/lib" />
       <method v="2" />
     </configuration>
@@ -170,27 +174,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_8_string_to_integer_atoi_Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_8_string_to_integer_atoi_Kt" />
+    <configuration name="_92_reverse_linked_list_IIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_92_reverse_linked_list_IIKt" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Dart Command Line App.92.reverse_linked_list_II.dart" />
       <item itemvalue="Dart Command Line App.54.spiral_matrix.dart" />
-      <item itemvalue="Dart Command Line App.8.string_to_integer(atoi).dart" />
+      <item itemvalue="Kotlin._92_reverse_linked_list_IIKt" />
       <item itemvalue="Kotlin._54_spiral_matrixKt" />
       <item itemvalue="Kotlin._442_find_all_duplicates_in_an_arrayKt" />
-      <item itemvalue="Kotlin._8_string_to_integer_atoi_Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._92_reverse_linked_list_IIKt" />
+        <item itemvalue="Dart Command Line App.92.reverse_linked_list_II.dart" />
         <item itemvalue="Kotlin._54_spiral_matrixKt" />
         <item itemvalue="Dart Command Line App.54.spiral_matrix.dart" />
         <item itemvalue="Kotlin._442_find_all_duplicates_in_an_arrayKt" />
-        <item itemvalue="Kotlin._8_string_to_integer_atoi_Kt" />
-        <item itemvalue="Dart Command Line App.8.string_to_integer(atoi).dart" />
       </list>
     </recent_temporary>
   </component>
