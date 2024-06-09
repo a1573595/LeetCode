@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79f1d7f7-50b3-4373-a872-7918a63ac116" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/92.reverse_linked_list_II.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/92.reverse_linked_list_II.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/70.climbing_stairs.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/70.climbing_stairs.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/other/list_node.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/other/list_node.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/61.rotate_list.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/61.rotate_list.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +70,7 @@
     "Dart Command Line App.48.rotate_image.dart.executor": "Run",
     "Dart Command Line App.53.maximum_subarray.dart.executor": "Run",
     "Dart Command Line App.54.spiral_matrix.dart.executor": "Run",
+    "Dart Command Line App.61.rotate_list.dart.executor": "Run",
     "Dart Command Line App.70.climbing_stairs.dart.executor": "Run",
     "Dart Command Line App.747.largest_number_at_least_twice_of_others.dart.executor": "Run",
     "Dart Command Line App.75.sort_colors.dart.executor": "Run",
@@ -122,6 +122,7 @@
     "Kotlin._48_rotate_image_dartKt.executor": "Run",
     "Kotlin._53_maximum_subarrayKt.executor": "Run",
     "Kotlin._54_spiral_matrixKt.executor": "Run",
+    "Kotlin._61_rotate_listKt.executor": "Run",
     "Kotlin._70_climbing_stairsKt.executor": "Run",
     "Kotlin._747_largest_number_at_least_twice_of_othersKt.executor": "Run",
     "Kotlin._75_sort_colorsKt.executor": "Run",
@@ -149,9 +150,9 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin._92_reverse_linked_list_IIKt">
-    <configuration name="54.spiral_matrix.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/lib/54.spiral_matrix.dart" />
+  <component name="RunManager" selected="Kotlin._61_rotate_listKt">
+    <configuration name="61.rotate_list.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/lib/61.rotate_list.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/lib" />
       <method v="2" />
     </configuration>
@@ -160,15 +161,15 @@
       <option name="workingDirectory" value="$PROJECT_DIR$/lib" />
       <method v="2" />
     </configuration>
-    <configuration name="_442_find_all_duplicates_in_an_arrayKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_442_find_all_duplicates_in_an_arrayKt" />
+    <configuration name="_54_spiral_matrixKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_54_spiral_matrixKt" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_54_spiral_matrixKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_54_spiral_matrixKt" />
+    <configuration name="_61_rotate_listKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_61_rotate_listKt" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -182,19 +183,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Dart Command Line App.61.rotate_list.dart" />
       <item itemvalue="Dart Command Line App.92.reverse_linked_list_II.dart" />
-      <item itemvalue="Dart Command Line App.54.spiral_matrix.dart" />
+      <item itemvalue="Kotlin._61_rotate_listKt" />
       <item itemvalue="Kotlin._92_reverse_linked_list_IIKt" />
       <item itemvalue="Kotlin._54_spiral_matrixKt" />
-      <item itemvalue="Kotlin._442_find_all_duplicates_in_an_arrayKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._61_rotate_listKt" />
+        <item itemvalue="Dart Command Line App.61.rotate_list.dart" />
         <item itemvalue="Kotlin._92_reverse_linked_list_IIKt" />
         <item itemvalue="Dart Command Line App.92.reverse_linked_list_II.dart" />
         <item itemvalue="Kotlin._54_spiral_matrixKt" />
-        <item itemvalue="Dart Command Line App.54.spiral_matrix.dart" />
-        <item itemvalue="Kotlin._442_find_all_duplicates_in_an_arrayKt" />
       </list>
     </recent_temporary>
   </component>
@@ -225,5 +226,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArithmeticException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
