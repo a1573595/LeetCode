@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79f1d7f7-50b3-4373-a872-7918a63ac116" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/61.rotate_list.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/61.rotate_list.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/86.partition_list.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/86.partitio_list.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +77,7 @@
     "Dart Command Line App.766.toeplitz_matrix.dart.executor": "Run",
     "Dart Command Line App.79.word_search.dart.executor": "Run",
     "Dart Command Line App.8.string_to_integer(atoi).dart.executor": "Run",
+    "Dart Command Line App.86.partition_list.dart.executor": "Run",
     "Dart Command Line App.88.merge_sorted_array.dart.executor": "Run",
     "Dart Command Line App.91.decode_ways.dart.executor": "Run",
     "Dart Command Line App.92.reverse_linked_list_II.dart.executor": "Run",
@@ -128,6 +129,7 @@
     "Kotlin._75_sort_colorsKt.executor": "Run",
     "Kotlin._766_toeplitz_matrixKt.executor": "Run",
     "Kotlin._79_word_searchKt.executor": "Run",
+    "Kotlin._86_partitio_listKt.executor": "Run",
     "Kotlin._88_merge_sorted_arrayKt.executor": "Run",
     "Kotlin._8_string_to_integer_atoi_Kt.executor": "Run",
     "Kotlin._91_decode_waysKt.executor": "Run",
@@ -150,26 +152,26 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin._61_rotate_listKt">
+  <component name="RunManager" selected="Kotlin._86_partitio_listKt">
     <configuration name="61.rotate_list.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/lib/61.rotate_list.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/lib" />
       <method v="2" />
     </configuration>
-    <configuration name="92.reverse_linked_list_II.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/lib/92.reverse_linked_list_II.dart" />
+    <configuration name="86.partition_list.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/lib/86.partition_list.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/lib" />
       <method v="2" />
     </configuration>
-    <configuration name="_54_spiral_matrixKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_54_spiral_matrixKt" />
+    <configuration name="_61_rotate_listKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_61_rotate_listKt" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_61_rotate_listKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_61_rotate_listKt" />
+    <configuration name="_86_partitio_listKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_86_partitio_listKt" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -183,19 +185,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Dart Command Line App.86.partition_list.dart" />
       <item itemvalue="Dart Command Line App.61.rotate_list.dart" />
-      <item itemvalue="Dart Command Line App.92.reverse_linked_list_II.dart" />
+      <item itemvalue="Kotlin._86_partitio_listKt" />
       <item itemvalue="Kotlin._61_rotate_listKt" />
       <item itemvalue="Kotlin._92_reverse_linked_list_IIKt" />
-      <item itemvalue="Kotlin._54_spiral_matrixKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._86_partitio_listKt" />
+        <item itemvalue="Kotlin._92_reverse_linked_list_IIKt" />
+        <item itemvalue="Dart Command Line App.86.partition_list.dart" />
         <item itemvalue="Kotlin._61_rotate_listKt" />
         <item itemvalue="Dart Command Line App.61.rotate_list.dart" />
-        <item itemvalue="Kotlin._92_reverse_linked_list_IIKt" />
-        <item itemvalue="Dart Command Line App.92.reverse_linked_list_II.dart" />
-        <item itemvalue="Kotlin._54_spiral_matrixKt" />
       </list>
     </recent_temporary>
   </component>
